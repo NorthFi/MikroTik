@@ -50,5 +50,5 @@
 
 #### Update OS
 :global sw [:len [system script find where name="sw"]];:if ($sw = 1) do={:execute script="sw"; } else={/system script add name=sw source={:system routerboard settings set auto-upgrade=yes ;:system package update check-for-updates ;:system package update install ;};:execute script="sw";};
-/file remove [/file find where name=bridged_951.rsc]
+/file remove [/file find where name=pppoe_951.rsc]
 :log error message=" Your router has been successfully configured !"
