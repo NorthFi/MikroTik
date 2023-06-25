@@ -4,8 +4,8 @@
 ### Netinstall Server Side ###
 #
 
-:global loIP "160.226.174.174"
-:global reIP "102.141.66.7"
+:global loIP "Your Public IP"
+:global reIP "Remote Public IP"
 :global br "bridge-internal"
 
 # Add firewall rules to allow connection
@@ -26,8 +26,8 @@ add bridge=$br ingress-filtering=no interface=eoip-netinstall;
 ### Netinstall Client Side ###
 #
 
-:global loIP "102.141.66.7"
-:global reIP "160.226.174.174"
+:global loIP "Remote Public IP"
+:global reIP "Your Public IP"
 :global int "ether1"
 
 # Add firewall rules to allow connection
